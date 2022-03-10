@@ -8,7 +8,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		for (int i = 1; i <= num_sapos; i++) {
-			new sapo_corre("Sapo" + i, distancia).start();
+			new sapo_corre("Sapo " + i, distancia).start();
 		}
 
 	}

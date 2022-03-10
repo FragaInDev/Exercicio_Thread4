@@ -9,7 +9,7 @@ public class sapo_corre extends Thread {
 	int disTotal;
 	int pulo = 0;
 	int contPulos = 0;
-	int podio = 0;
+	static int podio = 0;
 	
 	public sapo_corre(String nome, int dTotal) {
 		this.disTotal = dTotal;
@@ -35,7 +35,7 @@ public class sapo_corre extends Thread {
 	}
 	
 	public void statusCorrida() {
-		System.out.println("O " + nome_sapo + " pulou " + pulo + " cm e ja percorreu " + disCorrida +" cm.");
+		System.out.println(nome_sapo + "/ pulou " + pulo + " cm \t e ja percorreu " + disCorrida +" cm.");
 	}
 	
 	public void podioCorrida() {
